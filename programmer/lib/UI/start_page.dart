@@ -53,7 +53,7 @@ class _StartPageState extends State<StartPage> {
                   ),
                   Container(
                     child: AutoSizeText(
-                      'Programmer',
+                      'PRIW',
                       style: TextStyle(
                         letterSpacing: 1.5,
                         fontFamily: 'Ubuntu',
@@ -65,7 +65,7 @@ class _StartPageState extends State<StartPage> {
                   ),
                   Container(
                     child: AutoSizeText(
-                      '.Planet',
+                      '19-23 Batch',
                       style: TextStyle(
                         letterSpacing: 1.5,
                         fontFamily: 'Ubuntu',

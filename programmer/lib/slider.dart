@@ -8,14 +8,11 @@ import 'package:easy_rich_text/easy_rich_text.dart';
 
 class NoonLoopingDemo extends StatelessWidget {
   NoonLoopingDemo({
-    this.ccScore,
     this.hrScore,
-    this.lcScore,
     this.hrPpScore,
-    this.hrSiScore,
   });
 
-  final int ccScore, hrScore, lcScore,hrPpScore,hrSiScore;
+  final int hrScore,hrPpScore;
 
   @override
   Widget build(BuildContext context) {
@@ -25,29 +22,23 @@ class NoonLoopingDemo extends StatelessWidget {
         CarouselSlider(
           items: [
             sliderScores(
-              score: ccScore,
-              text: "CodeChef",
-              score_cal: CC_TEXT,
-              imgUrl: AssetImage('images/cc_logo.png'),
-            ),
-            sliderScores(
               score: hrScore,
               text: "HackerRank",
               score_cal: HR_TEXT,
               imgUrl: AssetImage('images/hr_logo.png'),
             ),
-            sliderScores(
-              score: lcScore,
-              text: "LeetCode",
-              score_cal: LC_TEXT,
-              imgUrl: AssetImage('images/lc_logo.png'),
-            ),
-            sliderScores(
-              score: hrSiScore,
-              text: "HR SI Basic",
-              score_cal:"Smart Interviews Basic Solved",
-              imgUrl:AssetImage('images/'),
-            ),
+            // sliderScores(
+            //   score: lcScore,
+            //   text: "LeetCode",
+            //   score_cal: LC_TEXT,
+            //   imgUrl: AssetImage('images/lc_logo.png'),
+            // ),
+            // sliderScores(
+            //   score: hrSiScore,
+            //   text: "HR SI Basic",
+            //   score_cal:"Smart Interviews Basic Solved",
+            //   imgUrl:AssetImage('images/'),
+            // ),
             sliderScores(
               score: hrPpScore,
               text: "HR PP-1",

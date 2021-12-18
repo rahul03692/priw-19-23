@@ -19,7 +19,7 @@ class _ListViewBuilderWithIdState extends State<ListViewBuilderWithId> {
   Future func() async {
     ApiData ad = new ApiData();
     var data = await ad.getApiData();
-    studentsList = data['result'];
+    studentsList = data['data']['users'];
     return studentsList;
     //print(studentsList);
   }
@@ -40,12 +40,12 @@ class _ListViewBuilderWithIdState extends State<ListViewBuilderWithId> {
                 int pos = index + 1;
                 String roll = st['roll'];
                 String name = st['name'];
-                int ccScore = st['codechefSolved'];
+                //int ccScore = st['codechefSolved'];
                 int hrScore = st['hackerrankSolved'];
-                int hrSiScore=st['siSolved'];
+                //int hrSiScore=st['siSolved'];
                 int hrPpScore=st['ppSolved'];
-                int ibScore = st['interviewbitSolved'];
-                int lcScore = st['leetcodeSolved'];
+                //int ibScore = st['interviewbitSolved'];
+                //int lcScore = st['leetcodeSolved'];
                 int overall = st['overall'];
                 if (widget.rollno == roll) {
                   f = 1;
@@ -53,12 +53,12 @@ class _ListViewBuilderWithIdState extends State<ListViewBuilderWithId> {
                     pos: pos,
                     roll: roll,
                     name: name,
-                    ccScore: ccScore,
+                    //ccScore: ccScore,
                     hrScore: hrScore,
-                    hrSiScore:hrSiScore,
+                    //hrSiScore:hrSiScore,
                     hrPpScore: hrPpScore,
-                    ibScore: ibScore,
-                    lcScore: lcScore,
+                    //ibScore: ibScore,
+                    //lcScore: lcScore,
                     overall: overall,
                   );
                 } else {

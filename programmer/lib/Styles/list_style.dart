@@ -8,21 +8,13 @@ class ListStyles extends StatelessWidget {
       {this.pos,
       this.roll,
       this.name,
-      this.ccScore,
-      this.hrScore,
-      this.lcScore,
-      this.ibScore,
-      this.hrSiScore,
+        this.hrScore,
       this.hrPpScore,
       this.overall});
   final String roll, name;
-  final int ccScore,
-      hrScore,
-      lcScore,
-      ibScore,
+  final int hrScore,
       pos,
       overall,
-      hrSiScore,
       hrPpScore;
 
   @override
@@ -130,10 +122,7 @@ class ListStyles extends StatelessWidget {
                         children: [
                           SizedBox(
                             child: NoonLoopingDemo(
-                              ccScore: ccScore,
                               hrScore: hrScore,
-                              lcScore: lcScore,
-                              hrSiScore:hrSiScore,
                               hrPpScore:hrPpScore,
                             ),
                             height: 150.0,

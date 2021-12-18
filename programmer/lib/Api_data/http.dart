@@ -1,7 +1,8 @@
+
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-String url="https://codingprofiles.herokuapp.com/";
+String url="https://scarp-backend-priw.herokuapp.com/api/allUsers";
 class ApiData{
 
   Future getApiData() async{

@@ -14,8 +14,8 @@ class _ListViewBuilderState extends State<ListViewBuilder> {
   Future func() async {
     ApiData ad = new ApiData();
     var data = await ad.getApiData();
-    studentsList = data['result'];
-    //print(studentsList);
+    studentsList = data['data']['users'];
+    print(studentsList);
   }
 
   @override
@@ -45,23 +45,15 @@ class _ListViewBuilderState extends State<ListViewBuilder> {
             int pos = index + 1;
             String roll = st['roll'];
             String name = st['name'];
-            int ccScore = st['codechefSolved'];
             int hrScore = st['hackerrankSolved'];
-            int hrSiScore=st['siSolved'];
             int hrPpScore=st['ppSolved'];
-            int ibScore = st['interviewbitSolved'];
-            int lcScore = st['leetcodeSolved'];
             int overall = st['overall'];
             return ListStyles(
               pos: pos,
               roll: roll,
               name: name,
-              ccScore: ccScore,
               hrScore: hrScore,
-              hrSiScore:hrSiScore,
               hrPpScore:hrPpScore,
-              ibScore: ibScore,
-              lcScore: lcScore,
               overall: overall,
             );
           },
